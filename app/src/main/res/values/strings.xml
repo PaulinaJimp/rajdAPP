@@ -4,5 +4,6 @@
     <string name="clockText">eee</string>
     <string name="title_activity_riddle">Riddle</string>
     <string name="nextButton">sprawdź</string>
+    <string name="skipButton">pomiń</string>
     <string name="start_password">start</string>
 </resources>
