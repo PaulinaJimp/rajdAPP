@@ -7,4 +7,38 @@
     android:background="@drawable/pop_bg"
     tools:context="wrss.donotgetlost.PopActivity">
 
+    <TextView
+        android:text="@string/popText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:paddingTop="15dp"
+        android:textColor="#392c04"
+        android:paddingLeft="110dp"
+        android:gravity="center"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/pop_skipq_button"
+        android:layout_marginBottom="7dp" />
+
+    <Button
+        android:id="@+id/pop_skipq_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POMIŃ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
 </android.support.constraint.ConstraintLayout>

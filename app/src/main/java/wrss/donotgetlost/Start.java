@@ -33,6 +33,7 @@ public class Start extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        password = getString(R.string.start_password);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -73,7 +74,7 @@ public class Start extends AppCompatActivity {
 
         //clockText = (TextView) findViewById(R.id.clock);
 
-        password = getString(R.string.start_password);
+
 
 
 

@@ -5,20 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="500dp"
-    tools:context="wrss.donotgetlost.Start">
+    android:background="@drawable/grafika2"
+    tools:context="wrss.donotgetlost.Riddle">
 
-    <!--<TextView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="riddle"-->
-    <!--android:layout_centerHorizontal="true"-->
-    <!--android:layout_centerVertical="true"-->
-    <!--android:id="@+id/textView2" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bocian"
+        android:id="@+id/kaczki"
+        android:textColor="#f8bb00"
+        android:paddingHorizontal="40dp"
+        android:maxWidth="300dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nextButton"
+        android:background="#f8bb00"
+        android:textColor="#121499"
         android:layout_alignBaseline="@+id/skipButton"
         android:layout_alignBottom="@+id/skipButton"
         android:layout_alignLeft="@+id/input"
@@ -30,6 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:text="@string/skipButton"
+        android:background="#f8bb00"
+        android:textColor="#121499"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/input"
         android:layout_alignEnd="@+id/input" />
@@ -39,6 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="200dp"
+        android:textColor="#f8bb00"
         android:layout_above="@+id/skipButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp" />

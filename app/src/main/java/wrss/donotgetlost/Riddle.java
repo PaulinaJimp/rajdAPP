@@ -5,49 +5,64 @@ import android.content.pm.ActivityInfo;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import static java.lang.Long.MAX_VALUE;
 
 public class Riddle extends AppCompatActivity {
-    //private TextView clockText;
+
     private Globals g=Globals.getInstance();
     private Button button;
+    private Button skipButton;
 
-    private CountDownTimer timer;
-    private long timeInMili;
+    private String password1;
+    private String password2;
+    private String password3;
+    private EditText answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        password1 = getString(R.string.bocian_password1);
+        password2 = getString(R.string.bocian_password2);
+        password3 = getString(R.string.bocian_password3);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riddle);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        //g.setCzas_gry(String.valueOf(BuildConfig.VERSION_CODE));
-        //idź do następnej strony
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openActvity2();
+                answer = (EditText) findViewById(R.id.input);
+
+                if(answer.getText().toString().trim().equalsIgnoreCase(password1) ||answer.getText().toString().trim().equalsIgnoreCase(password2)||answer.getText().toString().trim().equalsIgnoreCase(password3))
+                {
+                    openActvity2();
+                }
+                else
+                {
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP,0,0);
+                    toast.makeText(Riddle.this, " zla opwiedź ",toast.LENGTH_SHORT).show();
+                    answer.setText("");
+                }
             }
         });
 
-        timeInMili = g.getMili();
-        //zegar
-        //clockButton = (Button) findViewById(R.id.clockButton);
-        //clockButton.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        startTimer();
-        //    }
-        //});
+        skipButton=(Button)findViewById(R.id.skipButton);
+        skipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PopActivity.class);
+                startActivity(i);
+            }
+        });
 
-        //clockText = (TextView) findViewById(R.id.clock);
-        //clockText.setText(g.getCzas_gry());
-        //startTimer();
     }
 
 
@@ -56,43 +71,7 @@ public class Riddle extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void startTimer() {
-//
-//
-//
-//
-//        timer = new CountDownTimer(timeInMili, 1000) {
-//            @Override
-//            public void onTick(long l) {
-//                timeInMili += 1000;
-//                updateTimer();
-//            }
-//
-//            @Override
-//            public void onFinish() {
-//
-//            }
-//        }.start();
-//    }
-//
-//    public void updateTimer() {
-//        int hour = (int) timeInMili / 3600000;
-//        int min = (int) timeInMili % 3600000 / 60000;
-//        int sec = (int) timeInMili % 3600000 % 60000 / 1000;
-//
-//        String timeNowText;
-//        timeNowText = "" + hour + ":";
-//
-//        if (min < 10) timeNowText += "0";
-//        timeNowText += min + ":";
-//        if (sec < 10) timeNowText += "0";
-//        timeNowText += sec;
-//
-//
-//        g.setCzas_gry(timeNowText);
-//        g.setMili(timeInMili);
-//        clockText.setText(g.getCzas_gry());
-//    }
+
 
 
     @Override

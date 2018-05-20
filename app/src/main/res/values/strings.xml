@@ -1,9 +1,33 @@
 <resources>
     <string name="app_name">DOnotGETlost</string>
     <string name="hello_world">hello world xd</string>
-    <string name="clockText">eee</string>
-    <string name="title_activity_riddle">Riddle</string>
+    <string name="clockText">00:00:00</string>
+
+    <string name="bocian">To było tak: bociana dziobał szpak,\n potem była zmiana i szpak dziobał bociana,\n potem były jeszcze dwie zmiany,\n\n ile razy był szpak dziobany?</string>
     <string name="nextButton">sprawdź</string>
     <string name="skipButton">pomiń</string>
+    <string name="popText">Jesteście pewni, że chcecie pominąć \nto pytanie?\nKażde użycie wiąże się z karami :)\nUżyjcie tej opcji tylko w ostateczności</string>
     <string name="start_password">start</string>
+    <string name="gratulacje">Gratulacje</string>
+    <string name="kaczki">Uradowany myśliwy zauważył, że nad jeziorem szybuje stado dzikich kaczek.\n\nA leciało ich: jedna na samym przedzie, dwie za nią, jedna z tyłu i dwie na początku, jedna pośrodku i trzy w jednym rzędzie.
+     \n\n\nPytanie: Do ilu kaczek mógł strzelać myśliwy?</string>
+    <string name="startText">Witamy w grze na śmierć i życie !!\n\nWpisz hasło, które dostaniesz od organizatorów:</string>
+    <string name="kaczki_password1">trzy</string>
+    <string name="kaczki_password2">3</string>
+    <string name="kaczki_password3">trzech</string>
+    <string name="bocian_password1">ani razu</string>
+    <string name="bocian_password2">0</string>
+    <string name="bocian_password3">zero</string>
+    <string name="kod_poczatkowy">you shall not pass</string>
+    <string name="firstText">Organizator wpisuje to hasło:</string>
+    <string name="rules">1. Hasło startowe dostaniecie wysiadając z autobusu\n
+        2. NIE wyłączaj aplikacji \n(nie uruchomisz jej bez kodu od organizatorów)\n
+        3. Wpisując hasło startowe zaczyna się liczyć wasz czas \n
+        pierwsze 3 drużyny będą nagrodzone\n
+        4. Podczas gry będziecie mogli wybrać jedną z dwóch ras\n
+        podstawową lub rozszeżoną\n
+        5. BAWCIE SIĘ DOBRZE :)\n\n
+        6. Podaj nazwę drużyny:
+    </string>
+
 </resources>

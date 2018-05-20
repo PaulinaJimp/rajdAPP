@@ -11,6 +11,7 @@ public class Globals {
     private static long mili;
 
     private static int skips;
+    private static String teamName;
 
     private Globals() {
     }
@@ -35,6 +36,10 @@ public class Globals {
         Globals.skips = s;
     }
 
+    public void setSkips() {
+        Globals.skips++;
+    }
+
     public int getSkips() {
         return Globals.skips;
     }
@@ -44,6 +49,14 @@ public class Globals {
             instance = new Globals();
         }
         return instance;
+    }
+
+    public void setTeamName(String s) {
+        Globals.teamName = s;
+    }
+
+    public String getTeamName() {
+        return Globals.teamName;
     }
 
 }

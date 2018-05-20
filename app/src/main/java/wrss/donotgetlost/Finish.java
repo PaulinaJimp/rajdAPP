@@ -9,6 +9,7 @@ public class Finish extends AppCompatActivity {
 
 
     private TextView clockText;
+    private TextView livesText;
     private Globals g = Globals.getInstance();
 
     @Override
@@ -21,7 +22,8 @@ public class Finish extends AppCompatActivity {
 
         clockText = (TextView) findViewById(R.id.clock);
         clockText.setText(g.getCzas_gry());
-
+        livesText = (TextView) findViewById(R.id.lives);
+        livesText.setText(("-"+String.valueOf(g.getSkips())+"HP"));
     }
 
     @Override
