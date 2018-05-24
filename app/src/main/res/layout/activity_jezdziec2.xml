@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="500dp"
+    android:background="@drawable/grafika2"
+    tools:context="wrss.donotgetlost.jezdziec2">
+
+    <TextView
+        android:id="@+id/skrytka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/skrytka"
+        android:textColor="#f8bb00"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/aragorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skrytka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/zapalki_pytanie"
+        android:textColor="#f8bb00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/aragorn_podpowiedz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aragorn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="N _ Z _ U _"
+        android:textColor="#f8bb00"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextButton"
+        android:background="#f8bb00"
+        android:textColor="#121499"
+        android:layout_alignBaseline="@+id/skipButton"
+        android:layout_alignBottom="@+id/skipButton"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignStart="@+id/input" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:text="POMÓŻ"
+        android:background="#f8bb00"
+        android:textColor="#121499"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/input"
+        android:layout_alignEnd="@+id/input" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:textColor="#f8bb00"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="0:00:00"-->
+    <!--android:textSize="50dp"-->
+    <!--android:id="@+id/clock"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginRight="80dp"-->
+    <!--android:layout_marginEnd="80dp"-->
+    <!--android:layout_marginBottom="63dp" />-->
+
+</RelativeLayout>

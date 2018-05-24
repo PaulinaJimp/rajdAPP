@@ -82,7 +82,7 @@ public class Start extends AppCompatActivity {
 
 
     public void openActvity2() {
-        Intent intent = new Intent(this, Riddle2.class);
+        Intent intent = new Intent(this, aragorn.class);
         startActivity(intent);
     }
 

@@ -13,6 +13,9 @@ public class Globals {
     private static int skips;
     private static String teamName;
 
+    private static int currId;
+    private static int currZagadka;
+
     private Globals() {
     }
 
@@ -55,8 +58,9 @@ public class Globals {
         Globals.teamName = s;
     }
 
-    public String getTeamName() {
-        return Globals.teamName;
-    }
-
+    public String getTeamName() {return Globals.teamName;}
+    public void setCurrId(int i){Globals.currId = i;}
+    public int getCurrId(){return Globals.currId;}
+    public void setCurrZagadka(int i){Globals.currZagadka = i;}
+    public int getCurrZagadka(){return Globals.currZagadka;}
 }

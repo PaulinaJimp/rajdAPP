@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="500dp"
+    android:background="@drawable/grafika2"
+    tools:context="wrss.donotgetlost.system1">
+
+    <TextView
+        android:id="@+id/skrytka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/skrytka"
+        android:textColor="#f8bb00"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/aragorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skrytka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/zapalki_pytanie"
+        android:textColor="#f8bb00"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/aragorn_podpowiedz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/aragorn"
+        android:layout_alignRight="@+id/aragorn"
+        android:layout_below="@+id/aragorn"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:paddingHorizontal="40dp"
+        android:text="p = 1;\n
+result = 0;\n
+for i:=length(a)-1 downto 0\n\t
+  begin\n\t\t
+    x = valueOf(a[i]);\n\t\t
+    result = result + (x * p);\n\t\t
+    p = p*base;\n\t\t
+  end;\n\t
+print(result);"
+        android:textAlignment="viewStart"
+        android:textColor="#f8bb00"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextButton"
+        android:background="#f8bb00"
+        android:textColor="#121499"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/aragorn_podpowiedz"
+        android:layout_alignLeft="@+id/aragorn"
+        android:layout_alignStart="@+id/aragorn" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POMÓŻ"
+        android:background="#f8bb00"
+        android:textColor="#121499"
+        android:layout_above="@+id/input"
+        android:layout_alignRight="@+id/input"
+        android:layout_alignEnd="@+id/input" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:textColor="#f8bb00"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="0:00:00"-->
+    <!--android:textSize="50dp"-->
+    <!--android:id="@+id/clock"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginRight="80dp"-->
+    <!--android:layout_marginEnd="80dp"-->
+    <!--android:layout_marginBottom="63dp" />-->
+
+</RelativeLayout>

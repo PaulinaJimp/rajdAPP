@@ -29,5 +29,25 @@
         5. BAWCIE SIĘ DOBRZE :)\n\n
         6. Podaj nazwę drużyny:
     </string>
-
+    <string name="obiezyswiat">obieżyświat</string>
+    <string name="aragorn">aragorn</string>
+    <string name="tekst_pytanie">Kim jest opisana postać?</string>
+    <string name="czas_pytanie">Podaj najkrótszy czas przejścia :)</string>
+    <string name="zapalki_pytanie">Podaj liczbę :)</string>
+    <string name="rebus_pytanie">"Podaj rozwiązanie :)"</string>
+    <string name="skrytka">SKRYTKA</string>
+    <string name="pietnasciemin">piętnaście min</string>
+    <string name="pietnascieminut">piętnaście minut</string>
+    <string name="pietnascie">piętnaście</string>
+    <string name="liczba15">15</string>
+    <string name="liczba15min">15 min</string>
+    <string name="liczba15minut">15 minut</string>
+    <string name="czarnyjezdziec">czarny jeździec</string>
+    <string name="upiorpierscienia">upiór pierścienia</string>
+    <string name="nazgul">nazgul</string>
+    <string name="youshallnotpass">you shall not pass</string>
+    <string name="system112">112</string>
+    <string name="zapalki">511108</string>
+    <string name="koszulka">8</string>
+    <string name="podpowiedz_tekst">Nie znacie rozwiązania?? \nPomoże wam podpowiedz! </string>
 </resources>
